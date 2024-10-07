@@ -1,0 +1,233 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    background: url('background-image.jpg') no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #e0e0e0;
+}
+
+.cta-buttons .btn {
+    padding: 15px 40px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff6a00, #ff3f34);
+    color: #fff;
+    font-weight: 500;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255, 80, 0, 0.4);
+}
+
+.cta-buttons .secondary {
+    background-color: #333;
+    margin-left: 20px;
+}
+
+.cta-buttons .secondary:hover {
+    background-color: #444;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    background-color: #101010;
+}
+
+.features .section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff6a00;
+    margin-bottom: 40px;
+}
+
+.feature-boxes {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.feature-box {
+    width: 30%;
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+}
+
+.feature-box img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.feature-box h3 {
+    font-size: 1.8em;
+    color: #ff6a00;
+    margin-bottom: 15px;
+}
+
+.feature-box p {
+    color: #ccc;
+}
+
+/* Why Mentor Connect Section */
+.why-mentor-connect {
+    background-color: #121212;
+    padding: 60px 0;
+}
+
+.why-mentor-connect .section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff6a00;
+    margin-bottom: 40px;
+}
+
+.value-boxes {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.value-box {
+    width: 30%;
+    padding: 30px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.value-box:hover {
+    transform: translateY(-10px);
+}
+
+.value-box .icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #ff6a00;
+}
+
+.value-box p {
+    color: #ddd;
+    font-size: 1.2em;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: #0a0a0a;
+}
+
+.testimonials .section-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #ff6a00;
+    margin-bottom: 40px;
+}
+
+.testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    width: 40%;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial p {
+    color: #ccc;
+}
+
+.testimonial span {
+    color: #ff6a00;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #0a0a0a;
+    padding: 30px 0;
+    text-align: center;
+    color: #888;
+}
+
+.footer a {
+    color: #ff6a00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #ff3f34;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
